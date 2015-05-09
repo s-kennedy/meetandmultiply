@@ -1,0 +1,2 @@
+class OriginatorsController < ApplicationController
+end
