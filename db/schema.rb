@@ -11,14 +11,51 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150509133040) do
+ActiveRecord::Schema.define(version: 20150509150101) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "originators", force: :cascade do |t|
+  create_table "applicants", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "originators", force: :cascade do |t|
+    t.datetime "created_at",        null: false
+    t.datetime "updated_at",        null: false
+    t.string   "title"
+    t.string   "subtitle"
+    t.string   "website"
+    t.text     "about1"
+    t.text     "about2"
+    t.string   "location"
+    t.string   "sector"
+    t.string   "adopterprofile"
+    t.integer  "founded"
+    t.string   "employees"
+    t.integer  "turnover"
+    t.string   "profit"
+    t.text     "bmodel"
+    t.text     "relationships"
+    t.text     "revenue"
+    t.text     "customerbase"
+    t.text     "feature"
+    t.string   "impacttitle1"
+    t.string   "impacttitle2"
+    t.string   "impacttitle3"
+    t.text     "impacttext1"
+    t.text     "impacttext2"
+    t.text     "impacttext3"
+    t.text     "growthopportunity"
+    t.string   "replicationtitle1"
+    t.string   "replicationtitle2"
+    t.string   "replicationtitle3"
+    t.text     "replicationtext1"
+    t.text     "replicationtext2"
+    t.text     "replicationtext3"
+    t.text     "partners"
+    t.text     "coststructure"
   end
 
 end

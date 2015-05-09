@@ -788,15 +788,15 @@
             <div class="row">
                 
                 <div class="col-md-8">
-                    <h1 class="section-heading mb-10 mb-xs-0">eKutir</h1>
+                    <h1 class="section-heading mb-10 mb-xs-0"><%=@originator.title%></h1>
                     <div class="hs-line-4 uppercase">
-                        Using ICT to link smallholder farmers to markets and service providers in rural India
+                        <%=@originator.subtitle%>
                     </div>
                 </div>
                 
                 <div class="col-md-4 mt-30">
                     <div class="mod-breadcrumbs align-right">
-                        <a href="http://www.ekutirsb.com">website</a>
+                        <a href="http://www.ekutirsb.com"><%=@originator.website%></a>
                     </div>
                     
                 </div>
@@ -815,11 +815,11 @@
                 <div class="row">
                     
                     <div class="col-md-4 col-sm-6 mb-sm-50 mb-xs-30">
-                        eKutir is a for-profit, mission driven social enterprise that designed a one-stop-shop solution to extend agricultural services to the last mile. They work with over 100 micro-entrepreneurs that are the direct link to the smallholder farmersand offer them good agricultural practices, provide them with high-quality inputs and link them with markets. 
+                        <%=@originator.about1%> 
                     </div>
                     
                     <div class="col-md-4 col-sm-6 mb-sm-50 mb-xs-30">
-                        The innovation of eKutir is in designing this decentralized, risk-aversive, and transparent infrastructure for the entrepreneurs and farmers that uses ICT as a tool for scale and replication. ICT applications include a Farmer Portfolio Management Tool that captures all transactions of the farmers during the year and helps to reduce risks. 
+                        <%=@originator.about2%> 
                     </div>
                     
                     <div class="col-md-4 col-sm-12 mb-sm-50 mb-xs-30">
@@ -827,7 +827,7 @@
                         <!-- Bar Item -->
                         <div class="progress tpl-progress-alt progress-color">
                             <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
-                                Location: India <span class="right">80%</span>
+                                Location: <%=@originator.location%> <span class="right">80%</span>
                             </div>
                         </div>
                         <!-- End Bar Item -->
@@ -835,7 +835,7 @@
                         <!-- Bar Item -->
                         <div class="progress tpl-progress-alt progress-color">
                             <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-                                Sector: Agriculture <span class="right">90%</span>
+                                Sector: <%=@originator.sector%> <span class="right">90%</span>
                             </div>
                         </div>
                         <!-- End Bar Item -->
@@ -843,7 +843,7 @@
                         <!-- Bar Item -->
                         <div class="progress tpl-progress-alt progress-color">
                             <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
-                                Potential adopter profile:  <span class="right">85%</span>
+                                Potential adopter profile: <%=@originator.adopterprofile%> <span class="right">85%</span>
                             </div>
                         </div>
                         <!-- End Bar Item -->
@@ -861,7 +861,7 @@
                     <!-- Counter Item -->
                     <div class="col-xs-6 col-sm-3">
                         <div class="count-number color">
-                            2009
+                            <%=@originator.founded%>
                         </div>
                         <div class="count-descr">
                             <i class="fa fa-briefcase"></i>
@@ -873,7 +873,7 @@
                     <!-- Counter Item -->
                     <div class="col-xs-6 col-sm-3">
                         <div class="count-number color">
-                            > 100 
+                            <%=@originator.employees%>
                         </div>
                         <div class="count-descr">
                             <i class="fa fa-heart"></i>
@@ -885,7 +885,7 @@
                     <!-- Counter Item -->
                     <div class="col-xs-6 col-sm-3">
                         <div class="count-number color">
-                            200,000
+                            <%=@originator.turnover%>
                         </div>
                         <div class="count-descr">
                             <i class="fa fa-coffee"></i>
@@ -897,7 +897,7 @@
                     <!-- Counter Item -->
                     <div class="col-xs-6 col-sm-3">
                         <div class="count-number color">
-                            10-15%
+                            <%=@originator.profit%>
                         </div>
                         <div class="count-descr">
                             <i class="fa fa-lightbulb-o"></i>
@@ -934,8 +934,7 @@
                     
                     <!-- Section Text -->
                     <div class="section-text mb-80 mb-xs-50">
-                        Curabitur volutpat dui sit amet ligula fringilla sollicitudin. Nullam ac&nbsp;est arcu 
-                        luctus pretium purus ut&nbsp;laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        <%=@originator.bmodel%>
                     </div>
                     <!-- End Section Text -->
                     
@@ -955,7 +954,7 @@
                         </div>
                         <h3 class="alt-features-title">Key Partners, Activities and Resources</h3>
                         <div class="alt-features-descr">
-                            eKutir works with several partners from all sectors, including government, civil society (training and GAP) and private sector (agricultural inputs and agricultural buyers). Key partners are also the 106 micro-entrepreneurs that use the eKutir infrastructure to link smallholders with GAP, inputs and markets. 
+                            <%=@originator.partners%> 
 
                         </div>
                     </div>
@@ -970,7 +969,7 @@
                         </div>
                         <h3 class="alt-features-title">Customer Relationships, Channels and Segments</h3>
                         <div class="alt-features-descr">
-                            eKutir targets marginalized smallholder farmers through 106 micro-entrepreneurs that use the eKutir infrastructure to link smallholders with GAP, inputs and markets. 
+                            <%=@originator.relationships%>
                         </div>
                     </div>
                 </div>
@@ -984,7 +983,7 @@
                         </div>
                         <h3 class="alt-features-title">Cost structure</h3>
                         <div class="alt-features-descr">
-                            In the pre-harvest season, smallholder farmers pay 20 USD for advisory service and 3 USD for the mobile apps per year. The micro-entrepreneur that establishes the contact receives 12 USD per farmer and manages 350-500 farmers in total.
+                            <%=@originator.coststructure%>
                         </div>
                     </div>
                 </div>
@@ -998,7 +997,7 @@
                         </div>
                         <h3 class="alt-features-title">Additional revenue streams</h3>
                         <div class="alt-features-descr">
-                            Additionally, eKutir receives 2-3 percent of the turnover off-taker companies create in collaboration with the smallholder farmers and input providers pay 12 USD per farmer as commission to get connected. 
+                            <%=@originator.revenue%> 
 
                         </div>
                     </div>
@@ -1013,7 +1012,7 @@
                         </div>
                         <h3 class="alt-features-title">Customer base</h3>
                         <div class="alt-features-descr">
-                            Currently, eKutir reaches more than 70,000 farmers and works with 106 micro-entrepreneurs generates revenues of 200,000 USD. 
+                            <%=@originator.customerbase%> 
                         </div>
                     </div>
                 </div>
@@ -1025,11 +1024,9 @@
                         <div class="alt-features-icon color">
                             <span class="icon-chat"></span>
                         </div>
-                        <h3 class="alt-features-title">We're Friendly</h3>
+                        <h3 class="alt-features-title">Other features</h3>
                         <div class="alt-features-descr">
-                            Pulvinar vitae neque et porttitor. Integer non dapibus diam, ac 
-                            eleifend lectus. Praesent sed nisi eleifend, fermentum orci sit 
-                            amet, iaculis.
+                            <%=@originator.feature%>
                         </div>
                     </div>
                 </div>
@@ -1057,11 +1054,11 @@
                         </div>
                         
                         <!-- Section Title -->
-                        <h3 class="section-title large mb-30">Social and Economic Impact</h3>
+                        <h3 class="section-title large mb-30"><%=@originator.impacttitle1%></h3>
                         
                         <blockquote class="testimonial white">
                             <p>
-                                Currently eKutir reaches around 70,000 marginalized farmers with major impacts on income, nutrition and sanitation of farmers.
+                                <%=@originator.impacttext1%>
                             </p>
                         </blockquote>
                     </div>
@@ -1082,11 +1079,11 @@
                         </div>
                         
                         <!-- Section Title -->
-                        <h3 class="section-title large mb-30">Increased earnings for farmers</h3>
+                        <h3 class="section-title large mb-30"><%=@originator.impacttitle2%></h3>
                         
                         <blockquote class="testimonial white">
                             <p>
-                                The main impact is increased income earnings. Farmers working with eKutir earn at least 200 USD per month by increasing yields and reducing the cultivation costs. 
+                                <%=@originator.impacttext2%> 
                             </p>
                         </blockquote>
                     </div>
@@ -1107,11 +1104,11 @@
                         </div>
                         
                         <!-- Section Title -->
-                        <h3 class="section-title large mb-30">Improved health and sanitation</h3>
+                        <h3 class="section-title large mb-30"><%=@originator.impacttitle3%></h3>
                         
                         <blockquote class="testimonial white">
                             <p>
-                                Farmers have more healthy food available, not only for sale but also for subsistence. Besides consultancy service provided to farmers also include information on improved sanitation and their influence health and agriculture outputs.
+                                <%=@originator.impacttext3%>
                             </p>
                         </blockquote>
                     </div>
@@ -1147,9 +1144,7 @@
                     <h2 class="section-heading uppercase strong">Growth opportunity</h2>
                     
                     <div class="section-text mb-60">
-                        <p>eKutir is very keen to replicate their business model and looking for partners in Latin America who want to replicate their model at the BoP. eKutir could assist potential adopters by providing all the technical information of their ICT applications and consulting services. The support could include regular learning exchange and field visits in India and XXX. In return, they would charge 10 percent (.30 USD) per application sold.</p>
-                        <p><strong>Adopters’ staring costs</strong> for this business are around 100,000 USD to start at a micro level. A team of 10-15 employees constitute the main operating costs. They identify micro-entrepreneurs, input providers and off-taker companies and conduct the trainings.  costs for the micro-entrepreneurs. Management tools all the tools costs. 6 different applications.</p>
-                        <p><strong>Starting costs for micro-entrepreneurs</strong> are 500 USD – 1,000 USD, depending on the population density of the targeted area.</p>
+                        <%=@originator.growthopportunity%>
 
                     </div>
                     
@@ -1230,15 +1225,15 @@
                         <ul class="nav nav-tabs tpl-minimal-tabs animate">
                             
                             <li class="active">
-                                <a href="#mini-one" data-toggle="tab">Requirements</a>
+                                <a href="#mini-one" data-toggle="tab"><%=@originator.replicationtitle1%></a>
                             </li>
                             
                             <li>
-                                <a href="#mini-two" data-toggle="tab">Microentrepreneurs</a>
+                                <a href="#mini-two" data-toggle="tab"><%=@originator.replicationtitle2%></a>
                             </li>
                             
                             <li>
-                                <a href="#mini-three" data-toggle="tab">Adopter profile</a>
+                                <a href="#mini-three" data-toggle="tab"><%=@originator.replicationtitle3%></a>
                             </li>
                             
                         </ul>
@@ -1249,15 +1244,15 @@
                     <div class="tab-content tpl-minimal-tabs-cont section-text align-center">
                         
                         <div class="tab-pane fade in active" id="mini-one">
-                            Adopters should select a location with a high concentration of marginalized farmers. As the business model is based on ICT and mobile solutions, solid mobile phone connectivity and penetration is an important requirement for replication. 
+                            <%=@originator.replicationtext1%>
                         </div>
                         
                         <div class="tab-pane fade" id="mini-two">
-                            The micro-entrepreneurs should have basic education and good communication skills. Comprehensive knowledge on agricultural processes is not required as a 3-6 months training will qualify them to do the work and the smallholder farmers do commonly already have a solid agricultural knowledge. 
+                            <%=@originator.replicationtext2%>
                         </div>
                         
                         <div class="tab-pane fade" id="mini-three">
-                            Anyone who is working in the space of agriculture can be a potential adopter. Larger companies can adopt this model and align their profit interests with their social interests by creating employment and supporting smallholder farmers. Entrepreneurial individuals and government-led organizations could also be suitable partners.
+                            <%=@originator.replicationtext3%>
                         </div>
                         
                     </div>
