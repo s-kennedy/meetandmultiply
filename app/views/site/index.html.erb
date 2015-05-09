@@ -1011,28 +1011,44 @@
             <div class="row">
                 <div class="col-md-10 col-md-offset-1">
                     
-                    <form class="form contact-form" id="contact_form" autocomplete="off">
+                    <form accept-charset="UTF-8" action="/applicants" method="post"class="form contact-form" id="contact_form" autocomplete="off">
+                    <input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
                         <div class="clearfix">
                             
                             <div class="cf-left-col">
-                                
-                                <!-- Name -->
+
+                                <!-- First Name -->
                                 <div class="form-group">
-                                    <input type="text" name="name" id="name" class="input-lg form-control" placeholder="Name" pattern=".{3,100}" required>
+                                    <input type="text" name="applicant[firstname]" id="first-name" class="input-lg form-control" placeholder="First name" pattern=".{3,100}" required>
+                                </div>
+
+                                <!-- Last Name -->
+                                <div class="form-group">
+                                    <input type="text" name="applicant[lastname]" id="last-name" class="input-lg form-control" placeholder="Last name" pattern=".{3,100}" required>
                                 </div>
                                 
                                 <!-- Email -->
                                 <div class="form-group">
-                                    <input type="email" name="email" id="email" class="input-lg form-control" placeholder="Email" pattern=".{5,100}" required>
+                                    <input type="email" name="applicant[email]" id="email" class="input-lg form-control" placeholder="Email" pattern=".{5,100}" required>
+                                </div>
+
+                                <!-- Company -->
+                                <div class="form-group">
+                                    <input type="text" name="applicant[company]" id="company" class="input-lg form-control" placeholder="Company" pattern=".{3,100}" required>
                                 </div>
                                 
                             </div>
                             
                             <div class="cf-right-col">
                                 
-                                <!-- Message -->
+                                <!-- Interest -->
                                 <div class="form-group">                                            
-                                    <textarea name="message" id="message" class="input-lg form-control" style="height: 120px;" placeholder="Message"></textarea>
+                                    <textarea name="applicant[interest]" id="interest" class="input-lg form-control" style="height: 120px;" placeholder="Why are you interested in becoming an adopter?"></textarea>
+                                </div>
+
+                                <!-- About -->
+                                <div class="form-group">                                            
+                                    <textarea name="applicant[activities]" id="interest" class="input-lg form-control" style="height: 120px;" placeholder="What are your company's main activities?"></textarea>
                                 </div>
                                 
                             </div>
@@ -1054,7 +1070,7 @@
                                 
                                 <!-- Send Button -->
                                 <div class="align-right pt-10">
-                                    <button class="submit_btn btn btn-mod btn-color btn-large" id="submit_btn">Send Message</button>
+                                    <button class="submit_btn btn btn-mod btn-color btn-large" id="submit_btn">Register</button>
                                 </div>
                                 
                             </div>
