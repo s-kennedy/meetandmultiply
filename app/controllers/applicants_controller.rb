@@ -12,7 +12,7 @@ class ApplicantsController < ApplicationController
     @applicant = Applicant.new(applicant_params)
 
     if @applicant.save
-      redirect_to applicant_path(@applicant)
+      redirect_to root_path
     else
       render 'new'
     end
