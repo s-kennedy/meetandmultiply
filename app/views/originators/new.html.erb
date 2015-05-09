@@ -1,8 +1,8 @@
 <div class="row">
   <div class="col-md-8">
   <h1>New Originator</h1>
-    <div class="form">
-      <%= form_for @originator, url: {action: "create"} do |f| %>
+    <div class="originator-form">
+      <%= form_for [@originator] do |f| %>
         <%= f.label :title %>
         <%= f.text_field :title %><br>
         <%= f.label :subtitle %>
@@ -20,11 +20,11 @@
         <%= f.label :adopterprofile %>
         <%= f.text_field :adopterprofile %><br>
         <%= f.label :founded %>
-        <%= f.number_field :founded %><br>
+        <%= f.text_field :founded %><br>
         <%= f.label :employees %>
         <%= f.text_field :employees %><br>
         <%= f.label :turnover %>
-        <%= f.number_field :turnover %><br>
+        <%= f.text_field :turnover %><br>
         <%= f.label :profit %>
         <%= f.text_field :profit %><br>
         <%= f.label :bmodel %>

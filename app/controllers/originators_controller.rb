@@ -22,7 +22,7 @@ class OriginatorsController < ApplicationController
   end
 
   def edit
-    # @originator = Originator.find params[:id]
+    @originator = Originator.find params[:id]
     render 'new'
   end
 
