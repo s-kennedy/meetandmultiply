@@ -1019,12 +1019,12 @@
 
                                 <!-- First Name -->
                                 <div class="form-group">
-                                    <input type="text" name="applicant[first-name]" id="first-name" class="input-lg form-control" placeholder="First name" pattern=".{3,100}" required>
+                                    <input type="text" name="applicant[firstname]" id="first-name" class="input-lg form-control" placeholder="First name" pattern=".{3,100}" required>
                                 </div>
 
                                 <!-- Last Name -->
                                 <div class="form-group">
-                                    <input type="text" name="applicant[last-name]" id="last-name" class="input-lg form-control" placeholder="Last name" pattern=".{3,100}" required>
+                                    <input type="text" name="applicant[lastname]" id="last-name" class="input-lg form-control" placeholder="Last name" pattern=".{3,100}" required>
                                 </div>
                                 
                                 <!-- Email -->
@@ -1041,9 +1041,14 @@
                             
                             <div class="cf-right-col">
                                 
-                                <!-- Message -->
+                                <!-- Interest -->
                                 <div class="form-group">                                            
-                                    <textarea name="interest" id="interest" class="input-lg form-control" style="height: 120px;" placeholder="Why are you interested in becoming an adopter?"></textarea>
+                                    <textarea name="applicant[interest]" id="interest" class="input-lg form-control" style="height: 120px;" placeholder="Why are you interested in becoming an adopter?"></textarea>
+                                </div>
+
+                                <!-- About -->
+                                <div class="form-group">                                            
+                                    <textarea name="applicant[activities]" id="interest" class="input-lg form-control" style="height: 120px;" placeholder="What are your company's main activities?"></textarea>
                                 </div>
                                 
                             </div>

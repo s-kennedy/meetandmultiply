@@ -2,6 +2,7 @@ class ApplicantsController < ApplicationController
 
   def index
     @applicants = Applicant.all
+    @total = Applicant.count
   end
 
   def new
@@ -21,7 +22,7 @@ class ApplicantsController < ApplicationController
   private
 
   def applicant_params
-    params.require(:applicant).permit(:firstname, :lastname, :email, :company, :interest)
+    params.require(:applicant).permit(:firstname, :lastname, :email, :company, :interest, :activities)
   end
 
 end

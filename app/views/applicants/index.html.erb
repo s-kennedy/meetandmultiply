@@ -1,0 +1,28 @@
+<div class="col-md-12">
+  <h1> All applicants </h1>
+  <div class="total-applicants">
+    <p>Total applicants: <%= @total %></p>
+  </div>
+
+  <div class="all-applicants">
+    <table>
+      <tr>
+        <th>First name</th>
+        <th>Last name</th>
+        <th>Email</th>
+        <th>Company</th>
+        <th>Interest</th>
+      </tr>
+      <% @applicants.each do |applicant| %>
+      <tr>
+        <td><%=applicant.firstname%></td>
+        <td><%=applicant.lastname%></td>
+        <td><%=applicant.email%></td>
+        <td><%=applicant.company%></td>
+        <td><%=applicant.interest%></td>
+        <td><%=applicant.activities%></td>
+      </tr>
+    <% end %>
+    </table>
+  </div>
+</div>
