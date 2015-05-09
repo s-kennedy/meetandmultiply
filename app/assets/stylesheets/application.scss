@@ -10,6 +10,16 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
+ *= require 'animate.min'
+ *= require 'et-line'
+ *= require 'magnific-popup'
+ *= require 'owl.carousel'
+ *= require 'owl.transitions'
+ *= require 'rev-slider'
+ *= require 'simpletextrotator'
+ *= require 'vertical-rhythm.min'
+ *= require 'style'
+ *= require 'style-responsive'
  *= require_tree .
  *= require_self
  */
