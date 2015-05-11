@@ -1,3 +1,5 @@
+console.log("hi from all");
+
 (function($){
     "use strict"; // Start of use strict
     

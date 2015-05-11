@@ -32,7 +32,6 @@
 //= require masonry.pkgd.min
 //= require owl.carousel.min
 //= require placeholder
-//= require rev-slider
 //= require SmoothScroll
 //= require wow.min
 //= require_tree .
