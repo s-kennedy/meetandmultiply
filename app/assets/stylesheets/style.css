@@ -2241,6 +2241,11 @@ a.logo:hover{
     font-size: 64px;
     line-height: 1.05;
 }
+
+.logos {
+    width: 150px !important;
+    margin: auto;
+}
 .service-title{
     font-size: 22px;
     font-weight: 400;
