@@ -1,5 +1,3 @@
-console.log("hi from all");
-
 (function($){
     "use strict"; // Start of use strict
     
@@ -95,14 +93,12 @@ console.log("hi from all");
      --------------------------------------------- */
     
     // Sections backgrounds
-    
-    var pageSection = $(".home-section, .page-section, .small-section, .split-section");
-    pageSection.each(function(indx){
-        
-        if ($(this).attr("data-background")){
-            $(this).css("background-image", "url(" + $(this).data("background") + ")");
-        }
-    });
+    // var pageSection = $(".home-section, .page-section, .small-section, .split-section");
+    // pageSection.each(function(indx){
+    //     if ($(this).attr("data-background")){
+    //         $(this).css("background-image", "url(" + $(this).data("background") + ")");
+    //     }
+    // });
     
     // Function for block height 100%
     function height_line(height_object, height_donor){

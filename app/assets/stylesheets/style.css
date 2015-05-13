@@ -908,6 +908,7 @@ mobile-on .inner-nav .btn{
     display: block;    
     position: relative;
     overflow: hidden;
+    background-image: url(water.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center center;
@@ -1706,6 +1707,13 @@ a.logo:hover{
     box-sizing: border-box;
     
     padding: 140px 0;
+}
+
+.intro-section{
+    background-image: url(adopters.jpg);
+}
+.call-to-action{
+    background-image: url(women-farmers.jpg);
 }
 .small-section{
     padding: 70px 0;
