@@ -686,7 +686,7 @@ function init_map(){
         });
         
         
-        if (gmMapDiv.length) {
+        // if (gmMapDiv.length) {
         
             var gmCenterAddress = gmMapDiv.attr("data-address");
             var gmMarkerAddress = gmMapDiv.attr("data-address");
@@ -697,7 +697,7 @@ function init_map(){
                 marker: {
                     address: gmMarkerAddress,
                     options: {
-                        icon: "images/map-marker.png"
+                        icon: "map-marker.png"
                     }
                 },
                 map: {
@@ -715,7 +715,7 @@ function init_map(){
                     }
                 }
             });
-        }
+        // }
     })(jQuery);
 }
 
