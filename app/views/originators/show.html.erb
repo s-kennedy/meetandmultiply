@@ -10,7 +10,7 @@
             <!-- Logo ( * your text or image into link tag *) -->
             <div class="nav-logo-wrap local-scroll">
                 <a href="mp-index.html" class="logo">
-                    <img src="logo-dark.png" alt="" />
+                    <img src="/meetandmultiply-logo.png" alt="" />
                 </a>
             </div>
             <div class="mobile-nav">
@@ -22,7 +22,7 @@
     
     
     <!-- Head Section -->
-    <section class="small-section bg-dark-alfa-30" data-background="full-width-images/section-bg-1.jpg" >
+    <section class="small-section bg-dark-alfa-30 ekutir" data-background="full-width-images/section-bg-1.jpg" >
         <div class="relative container align-left">
             
             <div class="row">
@@ -65,25 +65,25 @@
                     <div class="col-md-4 col-sm-12 mb-sm-50 mb-xs-30">
                          
                         <!-- Bar Item -->
-                        <div class="progress tpl-progress-alt progress-color">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
-                                Location: <%=@originator.location%> <span class="right">80%</span>
+                        <div class="originator-info-item">
+                            <div class="originator-info-point">
+                                <span class="color">Location:</span> <%=@originator.location%>
                             </div>
                         </div>
                         <!-- End Bar Item -->
                         
                         <!-- Bar Item -->
-                        <div class="progress tpl-progress-alt progress-color">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-                                Sector: <%=@originator.sector%> <span class="right">90%</span>
+                        <div class="originator-info-item">
+                            <div class="originator-info-point">
+                                <span class="color">Sector:</span> <%=@originator.sector%>
                             </div>
                         </div>
                         <!-- End Bar Item -->
                         
                         <!-- Bar Item -->
-                        <div class="progress tpl-progress-alt progress-color">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
-                                Potential adopter profile: <%=@originator.adopterprofile%> <span class="right">85%</span>
+                        <div class="originator-info-item">
+                            <div class="originator-info-point">
+                                <span class="color">Adopter profile:</span> <%=@originator.adopterprofile%>
                             </div>
                         </div>
                         <!-- End Bar Item -->
@@ -104,7 +104,7 @@
                             <%=@originator.founded%>
                         </div>
                         <div class="count-descr">
-                            <i class="fa fa-briefcase"></i>
+                            <i class="fa fa-lightbulb-o"></i>
                             <span class="count-title">Founded</span>
                         </div>
                     </div>
@@ -116,7 +116,7 @@
                             <%=@originator.employees%>
                         </div>
                         <div class="count-descr">
-                            <i class="fa fa-heart"></i>
+                            <i class="fa fa-child"></i>
                             <span class="count-title">Employees</span>
                         </div>
                     </div>
@@ -128,7 +128,7 @@
                             <%=@originator.turnover%>
                         </div>
                         <div class="count-descr">
-                            <i class="fa fa-coffee"></i>
+                            <i class="fa fa-usd"></i>
                             <span class="count-title">Annual turnover (USD)</span>
                         </div>
                     </div>
@@ -140,7 +140,7 @@
                             <%=@originator.profit%>
                         </div>
                         <div class="count-descr">
-                            <i class="fa fa-lightbulb-o"></i>
+                            <i class="fa fa-line-chart"></i>
                             <span class="count-title">Profit margin</span>
                         </div>
                     </div>
@@ -153,6 +153,28 @@
         </div>
     </section>
     <!-- End About Section -->
+
+    <!-- Call Action Section -->
+    <section class="small-section bg-color-alfa-90 bg-scroll call-to-action" data-background="full-width-images/section-bg-4.jpg">
+        <div class="container relative">
+            
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2 align-center">
+                    
+                    <h1 class="section-title large">Interested in working with this company?</h1>
+                    
+                    <h2 class="section-heading uppercase strong">Apply to be an Adopter</h2>
+                    
+                    <div class="local-scroll">
+                        <a href="/#apply" class="btn btn-mod btn-border-w btn-large">Apply now</a>
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <!-- End Call Action Section -->
     
     <!-- Features Section -->
     <section class="page-section bg-gray-lighter">
@@ -190,7 +212,7 @@
                 <div class="col-sm-6 col-md-4 col-lg-4">
                     <div class="alt-features-item align-center">
                         <div class="alt-features-icon color">
-                            <span class="icon-flag"></span>
+                            <span class="icon-key"></span>
                         </div>
                         <h3 class="alt-features-title">Key Partners, Activities and Resources</h3>
                         <div class="alt-features-descr">
@@ -205,7 +227,7 @@
                 <div class="col-sm-6 col-md-4 col-lg-4">
                     <div class="alt-features-item align-center">
                         <div class="alt-features-icon color">
-                            <span class="icon-clock"></span>
+                            <span class="icon-piechart"></span>
                         </div>
                         <h3 class="alt-features-title">Customer Relationships, Channels and Segments</h3>
                         <div class="alt-features-descr">
@@ -219,7 +241,7 @@
                 <div class="col-sm-6 col-md-4 col-lg-4">
                     <div class="alt-features-item align-center">
                         <div class="alt-features-icon color">
-                            <span class="icon-hotairballoon"></span>
+                            <span class="icon-pricetags"></span>
                         </div>
                         <h3 class="alt-features-title">Cost structure</h3>
                         <div class="alt-features-descr">
@@ -233,7 +255,7 @@
                 <div class="col-sm-6 col-md-4 col-lg-4">
                     <div class="alt-features-item align-center">
                         <div class="alt-features-icon color">
-                            <span class="icon-heart"></span>
+                            <span class="icon-wallet"></span>
                         </div>
                         <h3 class="alt-features-title">Additional revenue streams</h3>
                         <div class="alt-features-descr">
@@ -248,7 +270,7 @@
                 <div class="col-sm-6 col-md-4 col-lg-4">
                     <div class="alt-features-item align-center">
                         <div class="alt-features-icon color">
-                            <span class="icon-linegraph"></span>
+                            <span class="icon-happy"></span>
                         </div>
                         <h3 class="alt-features-title">Customer base</h3>
                         <div class="alt-features-descr">
@@ -262,7 +284,7 @@
                 <div class="col-sm-6 col-md-4 col-lg-4">
                     <div class="alt-features-item align-center">
                         <div class="alt-features-icon color">
-                            <span class="icon-chat"></span>
+                            <span class="icon-ribbon"></span>
                         </div>
                         <h3 class="alt-features-title">Other features</h3>
                         <div class="alt-features-descr">
@@ -280,7 +302,7 @@
     <!-- End Features Section -->
     
     <!-- Testimonials Section -->
-    <section class="page-section bg-dark bg-dark-alfa-90 fullwidth-slider" data-background="full-width-images/section-bg-3.jpg">
+    <section class="page-section bg-dark bg-dark-alfa-90 fullwidth-slider ekutir" data-background="/ekutir/ekutirbg1.jpg">
         
         <!-- Slide Item -->
         <div>
@@ -369,7 +391,7 @@
             <!-- Section Headings -->
             <div class="split-section-headings left">
                 <div class="ssh-table">
-                    <div class="ssh-cell page-section bg-scroll" data-background="split-sections/split-section-1.jpg"></div>
+                    <div class="ssh-cell page-section bg-scroll ekutir-growth" data-background="split-sections/split-section-1.jpg"></div>
                 </div>
             </div>
             <!-- End Section Headings -->
@@ -385,44 +407,6 @@
                     
                     <div class="section-text mb-60">
                         <%=@originator.growthopportunity%>
-
-                    </div>
-                    
-                    <div class="row alt-features-grid">
-                        
-                        <!-- Features Item -->
-                        <div class="col-sm-4">
-                            <div class="alt-features-item align-center">
-                                <div class="alt-features-icon color">
-                                    <span class="icon-browser"></span>
-                                </div>
-                                <h3 class="alt-features-title">Unique Design</h3>
-                            </div>
-                        </div>
-                        <!-- End Features Item -->
-                        
-                        <!-- Features Item -->
-                        <div class="col-sm-4">
-                            <div class="alt-features-item align-center">
-                                <div class="alt-features-icon color">
-                                    <span class="icon-tools-2"></span>
-                                </div>
-                                <h3 class="alt-features-title">Quality Code</h3>
-                            </div>
-                        </div>
-                        <!-- End Features Item -->
-                        
-                        <!-- Features Item -->
-                        <div class="col-sm-4">
-                            <div class="alt-features-item align-center">
-                                <div class="alt-features-icon color">
-                                    <span class="icon-linegraph"></span>
-                                </div>
-                                <h3 class="alt-features-title">Easy Customization</h3>
-                            </div>
-                        </div>
-                        <!-- End Features Item -->
-                        
                     </div>
                     
                 </div>
@@ -458,7 +442,7 @@
                 
                 <!-- Col -->
                 
-                <div class="col-sm-8 col-sm-offset-2">
+                <div class="col-sm-10 col-sm-offset-1">
                     
                     <!-- Nav Tabs -->
                     <div class="align-center mb-40 mb-xxs-30">
@@ -496,6 +480,7 @@
                         </div>
                         
                     </div>
+
                     
                 </div>
                 
@@ -503,17 +488,31 @@
                 
             </div>
             <!-- End Story -->
-            
-            <!-- Promo Image -->
-            <div class="section-bot-image wow fadeInUp">
-                <img src="images/promo-6.png" alt="" />
-            </div>
-            <!-- End Promo Image -->
-            
         </div>
     </section>
     <!-- End Story Section -->
             
+    <!-- Call Action Section -->
+    <section class="small-section bg-color-alfa-90 bg-scroll call-to-action" data-background="full-width-images/section-bg-4.jpg">
+        <div class="container relative">
+            
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2 align-center">
+                    
+                    <h1 class="section-title large">Interested in working with this company?</h1>
+                    
+                    <h2 class="section-heading uppercase strong">Apply to be an Adopter</h2>
+                    
+                    <div class="local-scroll">
+                        <a href="/#apply" class="btn btn-mod btn-border-w btn-large">Apply now</a>
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <!-- End Call Action Section -->
    
     <!-- Foter -->
     <footer class="small-section bg-dark footer pb-60">
@@ -521,11 +520,9 @@
             
             <!-- Social Links -->
             <div class="footer-social-links mb-60 mb-xs-40">
-                <a href="#" title="Facebook" target="_blank"><i class="fa fa-facebook"></i></a>
-                <a href="#" title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a>
-                <a href="#" title="Behance" target="_blank"><i class="fa fa-behance"></i></a>
-                <a href="#" title="LinkedIn+" target="_blank"><i class="fa fa-linkedin"></i></a>
-                <a href="#" title="Pinterest" target="_blank"><i class="fa fa-pinterest"></i></a>
+                <a href="https://www.facebook.com/pages/Endeva/234763126582163" title="Facebook" target="_blank"><i class="fa fa-facebook"></i></a>
+                <a href="https://twitter.com/_Endeva" title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/grp/home?gid=4143187" title="LinkedIn+" target="_blank"><i class="fa fa-linkedin"></i></a>
             </div>
             <!-- End Social Links -->  
             
@@ -534,12 +531,12 @@
                 
                 <!-- Copyright -->
                 <div class="footer-copy">
-                    <a href="http://themeforest.net/user/theme-guru/portfolio" target="_blank">&copy; Endeva 2015</a>
+                    <a href="http://www.endeva.org" target="_blank">&copy; Endeva 2015</a>
                 </div>
                 <!-- End Copyright -->
                 
                 <div class="footer-made">
-                    Nice little message
+                    www.endeva.org
                 </div>
                 
             </div>
@@ -556,6 +553,7 @@
          
     </footer>
     <!-- End Foter -->
+
 
 
 </div>

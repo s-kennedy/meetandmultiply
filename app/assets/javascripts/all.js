@@ -36,7 +36,7 @@
         init_parallax();
         init_shortcodes();
         init_tooltips();
-        init_counters();
+        // init_counters();
         init_team();
         initPageSliders();
         initWorkFilter();

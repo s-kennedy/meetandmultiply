@@ -1718,6 +1718,12 @@ a.logo:hover{
 .small-section{
     padding: 70px 0;
 }
+.ekutir {
+    background-image: url(/ekutir/ekutirbg1.jpg);
+}
+.ekutir-growth {
+    background-image: url(/ekutir/ekutir2.jpg);
+}
 .small-title{
     padding: 0;
     margin: 0 0 30px 0;
