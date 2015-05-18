@@ -473,6 +473,12 @@
                 $(this).toggleClass("js-active");
             }
         });
+
+        // click on team item goes to profile page
+        $(".team-item-image").click(function() {
+            var url = $(this).attr('data-url')
+            window.location = url;
+        })
         
     }
     
