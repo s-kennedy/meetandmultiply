@@ -10,7 +10,7 @@
             <!-- Logo ( * your text or image into link tag *) -->
             <div class="nav-logo-wrap local-scroll">
                 <a href="/" class="logo">
-                    <img src="/meetandmultiply-logo.png" alt="" />
+                    <img src="/meetandmultiply-logo.png" alt="Meet and Multiply" />
                 </a>
             </div>
             <div class="mobile-nav">
@@ -22,7 +22,7 @@
     
     
     <!-- Head Section -->
-    <section class="small-section bg-dark-alfa-30 ekutir" data-background="full-width-images/section-bg-1.jpg" >
+    <section class="small-section bg-dark-alfa-30 ekutir" style="background-image: <%= @originator.bg_img %>;" >
         <div class="relative container align-left">
             
             <div class="row">
@@ -36,7 +36,7 @@
                 
                 <div class="col-md-4 mt-30">
                     <div class="mod-breadcrumbs align-right">
-                        <a href="http://www.ekutirsb.com"><%=@originator.website%></a>
+                        <a href=<%=@originator.url%>><%=@originator.website%></a>
                     </div>
                     
                 </div>
@@ -155,7 +155,7 @@
     <!-- End About Section -->
 
     <!-- Call Action Section -->
-    <section class="small-section bg-color-alfa-90 bg-scroll call-to-action" data-background="full-width-images/section-bg-4.jpg">
+    <section class="small-section bg-color-alfa-90 bg-scroll call-to-action" style="background-image: <%= @originator.bg_img %>;">
         <div class="container relative">
             
             <div class="row">
@@ -302,7 +302,7 @@
     <!-- End Features Section -->
     
     <!-- Testimonials Section -->
-    <section class="page-section bg-dark bg-dark-alfa-90 fullwidth-slider ekutir" data-background="/ekutir/ekutirbg1.jpg">
+    <section class="page-section bg-dark bg-dark-alfa-90 fullwidth-slider ekutir" style="background-image: <%= @originator.bg_img %>;">
         
         <!-- Slide Item -->
         <div>
@@ -391,7 +391,7 @@
             <!-- Section Headings -->
             <div class="split-section-headings left">
                 <div class="ssh-table">
-                    <div class="ssh-cell page-section bg-scroll ekutir-growth" data-background="split-sections/split-section-1.jpg"></div>
+                    <div class="ssh-cell page-section bg-scroll ekutir-growth" style="background-image: <%= @originator.growth_img %>;"></div>
                 </div>
             </div>
             <!-- End Section Headings -->
@@ -493,7 +493,7 @@
     <!-- End Story Section -->
             
     <!-- Call Action Section -->
-    <section class="small-section bg-color-alfa-90 bg-scroll call-to-action" data-background="full-width-images/section-bg-4.jpg">
+    <section class="small-section bg-color-alfa-90 bg-scroll call-to-action" style="background-image: <%= @originator.bg_img %>;">
         <div class="container relative">
             
             <div class="row">
@@ -536,7 +536,7 @@
                 <!-- End Copyright -->
                 
                 <div class="footer-made">
-                    www.endeva.org
+                    <a href="http://www.endeva.org">www.endeva.org</a>
                 </div>
                 
             </div>
