@@ -441,6 +441,16 @@ Primary use:    MultiPurpose Template
         margin-right: 0;
         float: none;
     }
+
+    .cf-full-width{
+        width: 100%;
+    }
+
+    .form-label label {
+        width: 100% !important;
+        font-weight: 200;
+        color: inherit;
+    }
     
     .section-more,
     .section-more.left,
