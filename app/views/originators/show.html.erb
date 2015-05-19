@@ -391,7 +391,7 @@
             <!-- Section Headings -->
             <div class="split-section-headings left">
                 <div class="ssh-table">
-                    <div class="ssh-cell page-section bg-scroll ekutir-growth" style="background-image: <%= @originator.growth_img %>;"></div>
+                    <div class="ssh-cell page-section bg-scroll ekutir-growth" style="background-image: url(<%= @originator.growth_img %>);"></div>
                 </div>
             </div>
             <!-- End Section Headings -->
@@ -491,6 +491,71 @@
         </div>
     </section>
     <!-- End Story Section -->
+
+    <!-- Process Section -->
+    <section class="page-section bg-gray-lighter">
+        <div class="container relative">
+            
+            <!-- Features Grid -->
+            <div class="row alt-features-grid">
+                
+                <!-- Text Item -->
+                <div class="col-sm-3">
+                    <div class="alt-features-item">
+                        <div class="alt-features-descr">
+                            <h4 class="mt-0">Further documentation</h4>
+                            Download this profile as a PDF or take a look at additional publications from or about this company.
+                        </div>
+                    </div>
+                </div>
+                <!-- End Text Item -->
+                
+                <!-- Features Item -->
+                <div class="col-sm-3">
+                    <div class="alt-features-item align-center">
+                        <div class="alt-features-icon color">
+                            <span class="icon-download"></span>
+                        </div>
+                        <h3 class="alt-features-title">
+                            <a href="<%=@originator.profile_path%>">Download this profile</a>
+                        </h3>
+                    </div>
+                </div>
+                <!-- End Features Item -->
+                
+                <!-- Features Item -->
+                <div class="col-sm-3">
+                    <div class="alt-features-item align-center">
+                        <div class="alt-features-icon color">
+                            <span class=" icon-document"></span>
+                        </div>
+                        <h3 class="alt-features-title">
+                            <a href="<%=@originator.report1_path%>"><%=@originator.report1_title%></a>
+                        </h3>
+                    </div>
+                </div>
+                <!-- End Features Item -->
+                
+                <!-- Features Item -->
+                <div class="col-sm-3">
+                    <div class="alt-features-item align-center">
+                        <div class="alt-features-icon color">
+                            <span class=" icon-document"></span>
+                        </div>
+                        <h3 class="alt-features-title">
+                            <a href="<%=@originator.report2_path%>"><%=@originator.report2_title%></a>
+                        </h3>
+                    </div>
+                </div>
+                <!-- End Features Item -->
+                
+           </div>
+           <!-- End Features Grid -->
+            
+        </div>
+    </section>
+    <!-- End Process Section -->            
+            
             
     <!-- Call Action Section -->
     <section class="small-section bg-color-alfa-90 bg-scroll call-to-action">

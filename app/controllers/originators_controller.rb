@@ -46,7 +46,7 @@ class OriginatorsController < ApplicationController
   private
 
   def originator_params
-    params.require(:originator).permit(:title, :subtitle, :website, :url, :about1, :about2, :location, :sector, :adopterprofile, :founded, :employees, :turnover, :profit, :bmodel, :partners, :relationships, :coststructure, :revenue, :customerbase, :feature, :impacttitle1, :impacttext1, :impacttitle2, :impacttext2, :impacttitle3, :impacttext3, :growthopportunity, :replicationtitle1, :replicationtitle2, :replicationtitle3, :replicationtext1, :replicationtext2, :replicationtext3, :bg_img, :growth_img)
+    params.require(:originator).permit(:title, :subtitle, :website, :url, :about1, :about2, :location, :sector, :adopterprofile, :founded, :employees, :turnover, :profit, :bmodel, :partners, :relationships, :coststructure, :revenue, :customerbase, :feature, :impacttitle1, :impacttext1, :impacttitle2, :impacttext2, :impacttitle3, :impacttext3, :growthopportunity, :replicationtitle1, :replicationtitle2, :replicationtitle3, :replicationtext1, :replicationtext2, :replicationtext3, :bg_img, :growth_img, :profile_path, :report1_path, :report1_title, :report2_path, :report2_title)
   end
 
 end
