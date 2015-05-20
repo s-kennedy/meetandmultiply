@@ -441,6 +441,15 @@ Primary use:    MultiPurpose Template
         margin-right: 0;
         float: none;
     }
+
+    .cf-full-width{
+    width: 100%;
+    }
+
+    .company-form, .individual-form {
+        display: none;
+    }
+
     
     .section-more,
     .section-more.left,

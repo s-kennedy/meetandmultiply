@@ -40,9 +40,10 @@
         init_team();
         initPageSliders();
         initWorkFilter();
-        init_map();
+        // init_map();
         init_wow();
         init_masonry();
+        init_appform();
     });
     
     $(window).resize(function(){
@@ -762,4 +763,25 @@ function init_masonry(){
         
     })(jQuery);
 }
+
+/* ---------------------------------------------
+ Application form
+ --------------------------------------------- */
         
+function init_appform() {
+    (function($){
+        $("#orgtype").on('change', function() {
+            var orgtype = $(this).val();
+            if (orgtype == "Company"){
+                $(".company-form").show("slow");
+                $(".individual-form").hide();
+            } else if (orgtype == "Individual") {
+                $(".individual-form").show("slow");
+                $(".company-form").hide();
+            } else {
+                $(".company-form").hide();
+                $(".individual-form").hide();
+            }
+        });
+    })(jQuery);
+}

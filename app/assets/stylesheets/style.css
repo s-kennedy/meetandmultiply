@@ -3370,6 +3370,22 @@ a.logo:hover{
     margin-bottom: 20px;
 }
 
+.cf-full-width{
+    width: 100%;
+}
+
+.form-group label {
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #999;
+    font-size: 13px;
+}
+
+.company-form, .individual-form {
+    display: none;
+}
 
 
 /* ==============================

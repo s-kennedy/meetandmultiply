@@ -16,14 +16,14 @@ class ApplicantsController < ApplicationController
       ApplicantMailer.confirm_email(@applicant).deliver_now
       redirect_to root_path
     else
-      render 'new'
+      redirect_to '/#apply'
     end
   end
 
   private
 
   def applicant_params
-    params.require(:applicant).permit(:firstname, :lastname, :email, :company, :interest, :activities)
+    params.require(:applicant).permit(:firstname, :lastname, :email, :nationality, :location, :orgtype, :company, :website, :aboutcompany, :position, :businessexperience, :sectorexperience, :language, :bmodel, :interest, :profile, :additional)
   end
 
 end
