@@ -735,24 +735,28 @@
                                     <input type="text" name="applicant[firstname]" id="first-name" class="input-lg form-control" placeholder="First name" pattern=".{3,100}" required>
                                 </div>
 
+                                <!-- Last Name -->
+                                <div class="form-group">
+                                    <input type="text" name="applicant[lastname]" id="last-name" class="input-lg form-control" placeholder="Last name" pattern=".{3,100}" required>
+                                </div>
+
                                 <!-- Email -->
                                 <div class="form-group">
-                                    <input type="text" name="applicant[email]" id="email" class="input-lg form-control" placeholder="Email" pattern=".{5,100}" >
+                                    <input type="text" name="applicant[email]" id="email" class="input-lg form-control" placeholder="Email" pattern=".{5,100}" required>
                                 </div>
 
-                                <!-- Nationality -->
-                                <div class="form-group">
-                                    <input type="text" name="applicant[nationality]" id="nationality" class="input-lg form-control" placeholder="Nationality" pattern=".{5,100}" >
-                                </div>
-
-                                
                             </div>
                             
                             <div class="cf-right-col">
 
-                                <!-- Last Name -->
+                                <!-- Nationality -->
                                 <div class="form-group">
-                                    <input type="text" name="applicant[lastname]" id="last-name" class="input-lg form-control" placeholder="Last name" pattern=".{3,100}" required>
+                                    <input type="text" name="applicant[nationality]" id="nationality" class="input-lg form-control" placeholder="Nationality" pattern=".{5,100}" required>
+                                </div>
+
+                                <!-- Location -->
+                                <div class="form-group">
+                                    <input type="text" name="applicant[location]" id="location" class="input-lg form-control" placeholder="Location" pattern=".{5,100}" required>
                                 </div>
 
                                 <!-- Language -->
@@ -764,11 +768,6 @@
                                     </select>
                                 </div>
 
-                                <!-- Location -->
-                                <div class="form-group">
-                                    <input type="text" name="applicant[location]" id="location" class="input-lg form-control" placeholder="Location" pattern=".{5,100}" >
-                                </div>
-
                             </div>
                             
                             <div class="cf-full-width">
@@ -776,7 +775,7 @@
                             <!-- Org Type -->
                                 <div class="form-group">
                                     <label class="form-label" for="orgtype">How are you applying?</label>
-                                    <select name="applicant[orgtype]" id="orgtype" class="input-lg form-control" placeholder="Applying as" pattern=".{5,100}" >
+                                    <select name="applicant[orgtype]" id="orgtype" class="input-lg form-control" placeholder="Applying as" pattern=".{5,100}" required>
                                         <option value="Choose one">Choose one</option>
                                         <option value="Company">As a company</option>
                                         <option value="Individual">As an individual</option>
@@ -789,17 +788,17 @@
                                 <div class="cf-left-col">
                                     <!-- Company -->
                                     <div class="form-group">
-                                        <input type="text" name="applicant[company]" id="company" class="input-lg form-control" placeholder="Company name" pattern=".{3,100}" required>
+                                        <input type="text" name="applicant[company]" id="company" class="input-lg form-control" placeholder="Company name" pattern=".{3,100}">
                                     </div>
 
                                     <!-- Website -->
                                     <div class="form-group">
-                                        <input type="text" name="applicant[website]" id="website" class="input-lg form-control" placeholder="Website" pattern=".{3,100}" required>
+                                        <input type="text" name="applicant[website]" id="website" class="input-lg form-control" placeholder="Website" pattern=".{3,100}">
                                     </div>
 
                                     <!-- Position -->
                                     <div class="form-group">
-                                        <input type="text" name="applicant[position]" id="position" class="input-lg form-control" placeholder="Your position" pattern=".{3,100}" required>
+                                        <input type="text" name="applicant[position]" id="position" class="input-lg form-control" placeholder="Your position" pattern=".{3,100}">
                                     </div>
                                 </div> 
 
@@ -836,8 +835,8 @@
 
                                 <!-- Model -->
                                 <div class="form-group">
-                                    <label class="form-label" for="model">Which model are you interested in?</label>
-                                    <select name="applicant[model]" id="model" class="input-lg form-control" placeholder="Model" pattern=".{5,100}" >
+                                    <label class="form-label" for="bmodel">Which model are you interested in?</label>
+                                    <select name="applicant[bmodel]" id="bmodel" class="input-lg form-control" placeholder="Model" pattern=".{5,100}" required>
                                         <option value="Choose one">Choose one</option>
                                         <option value="eKutir">eKutir</option>
                                         <option value="Jain Irrigation">Jain Irrigation</option>
@@ -855,7 +854,7 @@
 
                                 <!-- Additional -->
                                 <div class="form-group">
-                                    <input type="text" name="applicant[additional]" id="additional" class="input-lg form-control" placeholder="Any additional info?" pattern=".{3,100}" required>
+                                    <input type="text" name="applicant[additional]" id="additional" class="input-lg form-control" placeholder="Any additional info?" pattern=".{3,100}">
                                 </div>
                             </div> 
                             
@@ -883,7 +882,7 @@
                                 
                                 <!-- Send Button -->
                                 <div class="align-right pt-10">
-                                    <button class="submit_btn btn btn-mod btn-color btn-large" id="submit_btn">Apply</button>
+                                    <button type="submit" class="submit_btn btn btn-mod btn-color btn-large" id="submit_btn">Apply</button>
                                 </div>
                                 
                             </div>
