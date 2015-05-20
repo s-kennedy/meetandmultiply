@@ -16,7 +16,7 @@ class ApplicantsController < ApplicationController
       ApplicantMailer.confirm_email(@applicant).deliver_now
       redirect_to root_path
     else
-      render 'new'
+      redirect_to '/#apply'
     end
   end
 
