@@ -19,6 +19,7 @@
             <!-- main menu -->
             <div class="inner-nav desktop-nav">
                 <ul class="clearlist scroll-nav local-scroll">
+                    <li><a href="/">Home</a></li>
                     <li><a href="/#contact-us">Contact us</a></li>
                     <li>
                         <a href="/#apply"><span class="btn btn-mod btn-color btn-circle">Apply</span></a>
@@ -47,7 +48,7 @@
                 
                 <div class="col-md-4 mt-30">
                     <div class="mod-breadcrumbs align-right">
-                        <a href=<%=@originator.url%>><%=@originator.website%></a>
+                        <a href=<%=@originator.url%> target="_blank"><%=@originator.website%></a>
                     </div>
                     
                 </div>
@@ -164,28 +165,6 @@
         </div>
     </section>
     <!-- End About Section -->
-
-    <!-- Call Action Section -->
-    <section class="small-section bg-color-alfa-90 bg-scroll call-to-action">
-        <div class="container relative">
-            
-            <div class="row">
-                <div class="col-md-8 col-md-offset-2 align-center">
-                    
-                    <h1 class="section-title large">Interested in working with this company?</h1>
-                    
-                    <h2 class="section-heading uppercase strong">Apply to be an Adopter</h2>
-                    
-                    <div class="local-scroll">
-                        <a href="/#apply" class="btn btn-mod btn-border-w btn-large">Apply now</a>
-                    </div>
-                    
-                </div>
-            </div>
-            
-        </div>
-    </section>
-    <!-- End Call Action Section -->
     
     <!-- Features Section -->
     <section class="page-section bg-gray-lighter">
@@ -327,7 +306,7 @@
                         </div>
                         
                         <!-- Section Title -->
-                        <h2 class="section-title large">Impact</h2>
+                        <h2 class="section-title uppercase strong">Impact</h2>
                         <h3 class="section-title mb-30"><%=@originator.impacttitle1%></h3>
                         
                         <blockquote class="testimonial white">
@@ -353,7 +332,7 @@
                         </div>
                         
                         <!-- Section Title -->
-                        <h2 class="section-title large">Impact:</h2>
+                        <h2 class="section-title uppercase strong">Impact</h2>
                         <h3 class="section-title mb-30"><%=@originator.impacttitle2%></h3>
                         
                         <blockquote class="testimonial white">
@@ -379,7 +358,7 @@
                         </div>
                         
                         <!-- Section Title -->
-                        <h2 class="section-title large">Impact</h2>
+                        <h2 class="section-title uppercase strong">Impact</h2>
                         <h3 class="section-title mb-30"><%=@originator.impacttitle3%></h3>
                         
                         <blockquote class="testimonial white">
@@ -544,7 +523,7 @@
                             <span class=" icon-document"></span>
                         </div>
                         <h3 class="alt-features-title">
-                            <a href="<%=@originator.report1_path%>" target="blank"><%=@originator.report1_title%></a>
+                            <a href="<%=@originator.report1_path%>" target="_blank"><%=@originator.report1_title%></a>
                         </h3>
                     </div>
                 </div>
@@ -557,7 +536,7 @@
                             <span class=" icon-document"></span>
                         </div>
                         <h3 class="alt-features-title">
-                            <a href="<%=@originator.report2_path%>" target="blank" ><%=@originator.report2_title%></a>
+                            <a href="<%=@originator.report2_path%>" target="_blank" ><%=@originator.report2_title%></a>
                         </h3>
                     </div>
                 </div>
@@ -615,7 +594,7 @@
                 <!-- End Copyright -->
                 
                 <div class="footer-made">
-                    <a href="http://www.endeva.org">www.endeva.org</a>
+                    <a href="http://www.endeva.org" target="_blank">www.endeva.org</a>
                 </div>
                 
             </div>
