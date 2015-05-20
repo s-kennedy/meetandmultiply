@@ -443,14 +443,13 @@ Primary use:    MultiPurpose Template
     }
 
     .cf-full-width{
-        width: 100%;
+    width: 100%;
     }
 
-    .form-label label {
-        width: 100% !important;
-        font-weight: 200;
-        color: inherit;
+    .company-form, .individual-form {
+        display: none;
     }
+
     
     .section-more,
     .section-more.left,

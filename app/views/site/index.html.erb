@@ -722,7 +722,7 @@
             
             <!-- Contact Form -->                            
             <div class="row">
-                <div class="col-md-10 col-md-offset-1">
+                <div class="col-md-10 col-md-offset-1 application-form">
                     
                     <form accept-charset="UTF-8" action="/applicants" method="post"class="form contact-form" id="contact_form" autocomplete="off">
                     <input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
@@ -777,7 +777,7 @@
                                 <div class="form-group">
                                     <label class="form-label" for="orgtype">How are you applying?</label>
                                     <select name="applicant[orgtype]" id="orgtype" class="input-lg form-control" placeholder="Applying as" pattern=".{5,100}" >
-                                        <option value="">Choose one</option>
+                                        <option value="Choose one">Choose one</option>
                                         <option value="Company">As a company</option>
                                         <option value="Individual">As an individual</option>
                                     </select>
@@ -828,6 +828,9 @@
                                 </div>
                             </div> <!-- end individual form -->
 
+                        </div> <!-- end clearfix -->
+
+                        <div class="clearfix">
 
                             <div class="cf-full-width">
 
@@ -835,7 +838,7 @@
                                 <div class="form-group">
                                     <label class="form-label" for="model">Which model are you interested in?</label>
                                     <select name="applicant[model]" id="model" class="input-lg form-control" placeholder="Model" pattern=".{5,100}" >
-                                        <option value="">Choose one</option>
+                                        <option value="Choose one">Choose one</option>
                                         <option value="eKutir">eKutir</option>
                                         <option value="Jain Irrigation">Jain Irrigation</option>
                                         <option value="Narayana">Narayana</option>
