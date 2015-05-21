@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150520095510) do
+ActiveRecord::Schema.define(version: 20150521183307) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -36,7 +36,10 @@ ActiveRecord::Schema.define(version: 20150520095510) do
     t.string   "language"
     t.string   "bmodel"
     t.text     "profile"
-    t.string   "additional"
+    t.text     "additional"
+    t.string   "english"
+    t.string   "spanish"
+    t.string   "otherlang"
   end
 
   create_table "originators", force: :cascade do |t|

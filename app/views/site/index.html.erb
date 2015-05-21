@@ -416,7 +416,7 @@
                             <img src="logos/bopinc.png" alt="BoP Innovation Center">
                         </div>
                         <h3 class="service-title">BoP Innovation Center</h3>
-                        The BoP Innovation Center provides services and tools to develop, learn about and accelerate inclusive businesses in BoP markets. 
+                        The BoP Innovation Center facilitates sustainable inclusive business in low-income markets.
                     </div>
                 </div>
                 <!-- End Service Item -->
@@ -745,10 +745,6 @@
                                     <input type="text" name="applicant[email]" id="email" class="input-lg form-control" placeholder="Email" pattern=".{5,100}" required>
                                 </div>
 
-                            </div>
-                            
-                            <div class="cf-right-col">
-
                                 <!-- Nationality -->
                                 <div class="form-group">
                                     <input type="text" name="applicant[nationality]" id="nationality" class="input-lg form-control" placeholder="Nationality" pattern=".{5,100}" required>
@@ -759,14 +755,36 @@
                                     <input type="text" name="applicant[location]" id="location" class="input-lg form-control" placeholder="Location" pattern=".{5,100}" required>
                                 </div>
 
+
+                            </div>
+                            
+                            <div class="cf-right-col">
+
                                 <!-- Language -->
                                 <div class="form-group">
-                                    <select name="applicant[language]" id="language" class="input-lg form-control" placeholder="Language" pattern=".{5,100}" >
-                                        <option value="English">English</option>
-                                        <option value="Spanish">Spanish</option>
-                                        <option value="Other">Other</option>
+                                    <label class="form-label" for="orgtype">What is your level of English?</label>
+                                    <select name="applicant[english]" id="english" class="input-lg form-control" placeholder="Level of English" pattern=".{5,100}" >
+                                        <option value="Choose one">Choose one</option>
+                                        <option value="Low">Low</option>
+                                        <option value="Intermediate">Intermediate</option>
+                                        <option value="Advanced">Advanced</option>
                                     </select>
                                 </div>
+
+                                <div class="form-group">
+                                    <label class="form-label" for="orgtype">What is your level of Spanish?</label>
+                                    <select name="applicant[spanish]" id="spanish" class="input-lg form-control" placeholder="Level of Spanish" pattern=".{5,100}" >
+                                        <option value="Choose one">Choose one</option>
+                                        <option value="Low">Low</option>
+                                        <option value="Intermediate">Intermediate</option>
+                                        <option value="Advanced">Advanced</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <input type="text" name="applicant[otherlang]" id="otherlang" class="input-lg form-control" placeholder="Any other languages?" pattern=".{5,100}">
+                                </div>
+
 
                             </div>
                             
@@ -849,12 +867,12 @@
                             <div class="cf-left-col">
                                 <!-- Profile -->
                                 <div class="form-group">
-                                    <input type="text" name="applicant[profile]" id="profile" class="input-lg form-control" placeholder="How you match the profile" pattern=".{3,100}" required>
+                                    <textarea name="applicant[profile]" id="profile" class="input-lg form-control" style="height: 120px;" placeholder="Explain how you match the profile" required></textarea>
                                 </div>
 
                                 <!-- Additional -->
                                 <div class="form-group">
-                                    <input type="text" name="applicant[additional]" id="additional" class="input-lg form-control" placeholder="Any additional info?" pattern=".{3,100}">
+                                    <textarea name="applicant[additional]" id="additional" class="input-lg form-control" style="height: 120px;" placeholder="Any additional info?" ></textarea>
                                 </div>
                             </div> 
                             
