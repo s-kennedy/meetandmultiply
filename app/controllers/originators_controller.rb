@@ -1,7 +1,5 @@
 class OriginatorsController < ApplicationController
-
-  def index
-  end
+  http_basic_authenticate_with :name => ENV["admin_name"], :password => ENV["admin_password"], :only => [:new, :edit]
 
   def show
     @originator = Originator.find params[:id]

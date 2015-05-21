@@ -1,4 +1,5 @@
 class ApplicantsController < ApplicationController
+  http_basic_authenticate_with :name => ENV["admin_name"], :password => ENV["admin_password"], :only => [:index]
 
   def index
     @applicants = Applicant.all
