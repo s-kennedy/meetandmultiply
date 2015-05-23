@@ -17,6 +17,7 @@ class ApplicantsController < ApplicationController
       ApplicantMailer.confirm_email(@applicant).deliver_now
       redirect_to root_path
     else
+      flash[:error] = "Your application was not submitted correctly. Please make sure all fields are completed."
       redirect_to root_path
     end
   end
