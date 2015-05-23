@@ -4,14 +4,29 @@
     <p>Total applicants: <%= @total %></p>
   </div>
 
-  <div class="all-applicants">
+  <div class="all-applicants admin-page">
     <table>
       <tr>
         <th>First name</th>
         <th>Last name</th>
         <th>Email</th>
+        <th>Nationality</th>
+        <th>Location</th>
+        <th>Language</th>
+        <th>English</th>
+        <th>Spanish</th>
+        <th>Other languages</th>
+        <th>Company or individual</th>
         <th>Company</th>
+        <th>Website</th>
+        <th>About the company</th>
+        <th>Position</th>
+        <th>Business experience</th>
+        <th>Sector experience</th>
+        <th>Which model?</th>
         <th>Interest</th>
+        <th>Profile</th>
+        <th>Additional</th>
       </tr>
       <% @applicants.each do |applicant| %>
       <tr>
