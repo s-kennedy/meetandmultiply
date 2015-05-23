@@ -2,7 +2,7 @@ class OriginatorsController < ApplicationController
   http_basic_authenticate_with :name => ENV["admin_name"], :password => ENV["admin_password"], :only => [:new, :edit]
 
   def show
-    @originator = Originator.find params[:id]
+    @originator = Originator.friendly.find params[:id]
   end
 
   def new
@@ -20,12 +20,12 @@ class OriginatorsController < ApplicationController
   end
 
   def edit
-    @originator = Originator.find params[:id]
+    @originator = Originator.friendly.find params[:id]
     render 'new'
   end
 
   def update
-    @originator = Originator.find params[:id]
+    @originator = Originator.friendly.find params[:id]
     @originator.update_attributes originator_params
 
       if @originator.save
@@ -36,7 +36,7 @@ class OriginatorsController < ApplicationController
   end
 
   def delete
-    @originator = Originator.find params[:id]
+    @originator = Originator.friendly.find params[:id]
     @originator.destroy!
     redirect_to root_path
   end
