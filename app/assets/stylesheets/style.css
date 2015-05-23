@@ -4251,6 +4251,14 @@ table.shopping-cart-table tr td{
 /* ==============================
    Admin pages
    ============================== */
+.admin-page input, textarea {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.admin-page li {
+    margin-bottom: 20px;
+}
 
 
 

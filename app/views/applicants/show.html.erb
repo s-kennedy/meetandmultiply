@@ -1,26 +1,28 @@
 <div class="col-lg-12">
   <h1><%= @applicant.firstname %> <%= @applicant.lastname %></h1>
-  <ul>
-    <li><strong> Email: </strong> <%= @applicant.email %></li>
-    <li><strong> Nationality: </strong><%= @applicant.nationality %></li>
-    <li><strong> Location: </strong><%= @applicant.location %></li>
-    <li><strong> English: </strong><%= @applicant.english %></li>
-    <li><strong> Spanish: </strong><%= @applicant.spanish %></li>
-    <li><strong> Other languages: </strong><%= @applicant.otherlang %></li>
-    <li><strong> Individual or company: </strong><%= @applicant.orgtype %></li>
-    <% if @applicant.orgtype == "Company" %>
-      <li><strong> Company: </strong><%= @applicant.company %></li>
-      <li><strong> Website: </strong><%= @applicant.website %></li>
-      <li><strong> Position: </strong><%= @applicant.position %></li>
-      <li><strong> About the company: </strong><%= @applicant.aboutcompany %></li>
-    <% else %>
-      <li><strong> Business experience: </strong><%= @applicant.businessexperience %></li>
-      <li><strong> Sector experience: </strong><%= @applicant.sectorexperience %></li>
-    <% end %>
-    <li><strong> Business model: </strong><%= @applicant.bmodel %></li>
-    <li><strong> Why are they interested?: </strong><%= @applicant.interest %></li>
-    <li><strong> Why are they a match for the profile?: </strong><%= @applicant.profile %></li>
-    <li><strong> Additional info: </strong><%= @applicant.additional %></li>
-  </ul>
-  <%= link_to "Back", applicants_path, class: "btn"%>
+  <div class="admin-page">
+    <ul>
+      <li><strong> Email: </strong> <%= @applicant.email %></li>
+      <li><strong> Nationality: </strong><%= @applicant.nationality %></li>
+      <li><strong> Location: </strong><%= @applicant.location %></li>
+      <li><strong> English: </strong><%= @applicant.english %></li>
+      <li><strong> Spanish: </strong><%= @applicant.spanish %></li>
+      <li><strong> Other languages: </strong><%= @applicant.otherlang %></li>
+      <li><strong> Individual or company: </strong><%= @applicant.orgtype %></li>
+      <% if @applicant.orgtype == "Company" %>
+        <li><strong> Company: </strong><%= @applicant.company %></li>
+        <li><strong> Website: </strong><%= @applicant.website %></li>
+        <li><strong> Position: </strong><%= @applicant.position %></li>
+        <li><strong> About the company: </strong><%= @applicant.aboutcompany %></li>
+      <% else %>
+        <li><strong> Business experience: </strong><%= @applicant.businessexperience %></li>
+        <li><strong> Sector experience: </strong><%= @applicant.sectorexperience %></li>
+      <% end %>
+      <li><strong> Business model: </strong><%= @applicant.bmodel %></li>
+      <li><strong> Why are they interested?: </strong><%= @applicant.interest %></li>
+      <li><strong> Why are they a match for the profile?: </strong><%= @applicant.profile %></li>
+      <li><strong> Additional info: </strong><%= @applicant.additional %></li>
+    </ul>
+  </div>
+  <%= link_to "Back", applicants_path, class: "btn-mod"%>
 </div>
