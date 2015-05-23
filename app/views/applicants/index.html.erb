@@ -10,46 +10,16 @@
         <th>First name</th>
         <th>Last name</th>
         <th>Email</th>
-        <th>Nationality</th>
-        <th>Location</th>
-        <th>Language</th>
-        <th>English</th>
-        <th>Spanish</th>
-        <th>Other languages</th>
         <th>Company or individual</th>
-        <th>Company</th>
-        <th>Website</th>
-        <th>About the company</th>
-        <th>Position</th>
-        <th>Business experience</th>
-        <th>Sector experience</th>
         <th>Which model?</th>
-        <th>Interest</th>
-        <th>Profile</th>
-        <th>Additional</th>
       </tr>
       <% @applicants.each do |applicant| %>
       <tr>
-        <td><%=applicant.firstname%></td>
+        <td><%= link_to applicant.firstname, applicant_path(applicant) %></td>
         <td><%=applicant.lastname%></td>
         <td><%=applicant.email%></td>
-        <td><%=applicant.nationality%></td>
-        <td><%=applicant.location%></td>
-        <td><%=applicant.language%></td>
-        <td><%=applicant.english%></td>
-        <td><%=applicant.spanish%></td>
-        <td><%=applicant.otherlang%></td>
         <td><%=applicant.orgtype%></td>
-        <td><%=applicant.company%></td>
-        <td><%=applicant.website%></td>
-        <td><%=applicant.aboutcompany%></td>
-        <td><%=applicant.position%></td>
-        <td><%=applicant.businessexperience%></td>
-        <td><%=applicant.sectorexperience%></td>
         <td><%=applicant.bmodel%></td>
-        <td><%=applicant.interest%></td>
-        <td><%=applicant.profile%></td>
-        <td><%=applicant.additional%></td>
       </tr>
     <% end %>
     </table>

@@ -6,6 +6,10 @@ class ApplicantsController < ApplicationController
     @total = Applicant.count
   end
 
+  def show
+    @applicant = Applicant.find(params[:id])
+  end
+
   def new
     @applicant = Applicant.new
   end
