@@ -26,6 +26,7 @@ gem 'figaro'
 gem 'delayed_job_active_record'
 gem 'rails_12factor', group: :production
 gem 'friendly_id', '~> 5.1.0'
+gem 'email_validator'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

@@ -20,9 +20,7 @@
       <div class="loader">Loading...</div>
   </div>
   <!-- End Page Loader -->
-    <% flash.map do |key, msg| %>
-      <%= content_tag :div, msg, id: key, class: 'flash-messages'%>
-    <% end %>
+
 
 <%= yield %>
 

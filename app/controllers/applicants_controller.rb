@@ -19,9 +19,10 @@ class ApplicantsController < ApplicationController
 
     if @applicant.save
       ApplicantMailer.confirm_email(@applicant).deliver_now
+      flash[:success] = "Thank you, we have received your application. You should receive a confirmation email shortly."
       redirect_to root_path
     else
-      flash[:error] = "Your application was not submitted correctly. Please make sure all fields are completed."
+      flash[:error] = "Your application was not submitted. Please make sure all fields are completed correctly."
       redirect_to root_path
     end
   end

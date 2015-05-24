@@ -2,12 +2,20 @@
  Contact form
  --------------------------------------------- */
 // $(document).ready(function(){
+
 //     $("#submit_btn").click(function(){
+//       console.log("hello from contact_form!");
         
 //         //get input field values
-//         var user_name = $('input[name=name]').val();
-//         var user_email = $('input[name=email]').val();
-//         var user_message = $('textarea[name=message]').val();
+//         var first_name = $('#first-name').val();
+//         var last_name = $('#last-name').val();
+//         var email = $('#email').val();
+//         var email = $('#email').val();
+//         var email = $('#email').val();
+//         var email = $('#email').val();
+//         var email = $('#email').val();
+//         var email = $('#email').val();
+//         debugger;
         
 //         //simple validation at client's end
 //         //we simply change border color to red if empty field using .css()
@@ -26,35 +34,35 @@
 //             proceed = false;
 //         }
         
-//         //everything looks good! proceed...
-//         if (proceed) {
-//             //data to be sent to server
-//             post_data = {
-//                 'userName': user_name,
-//                 'userEmail': user_email,
-//                 'userMessage': user_message
-//             };
+//         // //everything looks good! proceed...
+//         // if (proceed) {
+//         //     //data to be sent to server
+//         //     post_data = {
+//         //         'userName': user_name,
+//         //         'userEmail': user_email,
+//         //         'userMessage': user_message
+//         //     };
             
-//             //Ajax post data to server
-//             $.post('contact_me.php', post_data, function(response){
+//         //     //Ajax post data to server
+//         //     $.post('contact_me.php', post_data, function(response){
             
-//                 //load json data from server and output message     
-//                 if (response.type == 'error') {
-//                     output = '<div class="error">' + response.text + '</div>';
-//                 }
-//                 else {
+//         //         //load json data from server and output message     
+//         //         if (response.type == 'error') {
+//         //             output = '<div class="error">' + response.text + '</div>';
+//         //         }
+//         //         else {
                 
-//                     output = '<div class="success">' + response.text + '</div>';
+//         //             output = '<div class="success">' + response.text + '</div>';
                     
-//                     //reset values in all input fields
-//                     $('#contact_form input').val('');
-//                     $('#contact_form textarea').val('');
-//                 }
+//         //             //reset values in all input fields
+//         //             $('#contact_form input').val('');
+//         //             $('#contact_form textarea').val('');
+//         //         }
                 
-//                 $("#result").hide().html(output).slideDown();
-//             }, 'json');
+//         //         $("#result").hide().html(output).slideDown();
+//         //     }, 'json');
             
-//         }
+//         // }
         
 //         return false;
 //     });

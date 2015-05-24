@@ -23,7 +23,7 @@
                         <li><a href="#partners">Partners</a></li>
                         <li><a href="#contact-us">Contact us</a></li>
                         <li><a href="#contact">Event Info</a></li>
-                        <li><a href="/faq">FAQ</a></li>
+                        <li><a href="/faqs">FAQ</a></li>
                         <li>
                             <a href="#apply"><span class="btn btn-mod btn-color btn-circle">Apply</span></a>
                         </li>
@@ -34,6 +34,9 @@
         </div>
     </nav>
     <!-- End Navigation panel -->
+    <% flash.map do |key, msg| %>
+      <%= content_tag :div, msg, id: key, class: 'flash-messages'%>
+    <% end %>
     
     <!-- Home Section -->
     <section class="home-section bg-dark-alfa-50 parallax-2 fixed-height-small"  id="home">
@@ -611,7 +614,7 @@
                     <h2 class="section-heading uppercase strong">Feel free to contact us</h2>
                     
                     <div class="local-scroll">
-                        <a href="/faq" class="btn btn-mod btn-border-w btn-large">FAQ</a>
+                        <a href="/faqs" class="btn btn-mod btn-border-w btn-large">FAQ</a>
                         <a href="mailto:t.pasipanodya@endeva.org" class="btn btn-mod btn-border-w btn-large">Contact us</a>
                     </div>
                     
@@ -766,7 +769,7 @@
                                 <div class="form-group">
                                     <label class="form-label" for="orgtype">What is your level of English?</label>
                                     <select name="applicant[english]" id="english" class="input-lg form-control" placeholder="Level of English" pattern=".{5,100}" required>
-                                        <option value="Choose one">Choose one</option>
+                                        <option selected="selected" disabled="disabled" value="">Choose one</option>
                                         <option value="Low">Low</option>
                                         <option value="Intermediate">Intermediate</option>
                                         <option value="Advanced">Advanced</option>
@@ -776,7 +779,7 @@
                                 <div class="form-group">
                                     <label class="form-label" for="orgtype">What is your level of Spanish?</label>
                                     <select name="applicant[spanish]" id="spanish" class="input-lg form-control" placeholder="Level of Spanish" pattern=".{5,100}" required>
-                                        <option value="Choose one">Choose one</option>
+                                        <option selected="selected" disabled="disabled" value="">Choose one</option>
                                         <option value="Low">Low</option>
                                         <option value="Intermediate">Intermediate</option>
                                         <option value="Advanced">Advanced</option>
@@ -796,7 +799,7 @@
                                 <div class="form-group">
                                     <label class="form-label" for="orgtype">How are you applying?</label>
                                     <select name="applicant[orgtype]" id="orgtype" class="input-lg form-control" placeholder="Applying as" pattern=".{5,100}" required>
-                                        <option value="Choose one">Choose one</option>
+                                        <option selected="selected" disabled="disabled" value="">Choose one</option>
                                         <option value="Company">As a company</option>
                                         <option value="Individual">As an individual</option>
                                     </select>
@@ -857,7 +860,7 @@
                                 <div class="form-group">
                                     <label class="form-label" for="bmodel">Which model are you interested in?</label>
                                     <select name="applicant[bmodel]" id="bmodel" class="input-lg form-control" placeholder="Model" pattern=".{5,100}" required>
-                                        <option value="Choose one">Choose one</option>
+                                        <option disabled="disabled" selected="selected" value="">Choose one</option>
                                         <option value="eKutir">eKutir</option>
                                         <option value="Jain Irrigation">Jain Irrigation</option>
                                         <option value="Narayana">Narayana</option>

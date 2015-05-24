@@ -35,6 +35,7 @@ class FaqsController < ApplicationController
       end
   end
 
+
   def delete
     @faq = faq.find params[:id]
     @faq.destroy!
