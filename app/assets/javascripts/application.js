@@ -33,5 +33,6 @@
 //= require owl.carousel.min
 //= require placeholder
 //= require SmoothScroll
+//= require validator
 //= require wow.min
 //= require_tree .

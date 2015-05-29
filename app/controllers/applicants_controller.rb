@@ -27,10 +27,16 @@ class ApplicantsController < ApplicationController
     end
   end
 
+  def destroy
+    @applicant = Applicant.find params[:id]
+    @applicant.destroy
+    redirect_to applicants_path
+  end
+
   private
 
   def applicant_params
-    params.require(:applicant).permit(:firstname, :lastname, :email, :nationality, :location, :orgtype, :company, :website, :aboutcompany, :position, :businessexperience, :sectorexperience, :language, :english, :spanish, :otherlang, :bmodel, :interest, :profile, :additional)
+    params.require(:applicant).permit(:firstname, :lastname, :email, :nationality, :location, :orgtype, :company, :website, :aboutcompany, :position, :businessexperience, :sectorexperience, :language, :english, :spanish, :otherlang, :bmodel, :interest, :profile, :additional, :referrer)
   end
 
 end
