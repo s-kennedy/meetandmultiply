@@ -774,16 +774,15 @@ function init_appform() {
     (function($){
         $("#orgtype").on('change', function() {
             var orgtype = $(this).val();
+            var individualForm = '<div class="cf-left-col"><div class="form-group"><textarea name="applicant[businessexperience]" id="businessexperience" class="input-lg form-control" style="height: 120px;" placeholder="Briefly mention your business experience" required data-error="Please fill out this field."></textarea><div class="help-block with-errors"></div></div></div><div class="cf-right-col"><div class="form-group"><textarea name="applicant[sectorexperience]" id="sectorexperience" class="input-lg form-control" style="height: 120px;" placeholder="Briefly mention your sector experience" required data-error="Please fill out this field."></textarea><div class="help-block with-errors"></div></div></div>';
+            var companyForm = '<div class="cf-left-col"><div class="form-group"><input type="text" name="applicant[company]" id="company" class="input-lg form-control" placeholder="Company name" pattern=".{3,100}" required data-error="Please fill out this field."><div class="help-block with-errors"></div></div><div class="form-group"><input type="url" name="applicant[website]" id="website" class="input-lg form-control" placeholder="Website" pattern=".{3,100}" required data-error="Please fill out this field."><div class="help-block with-errors"></div></div><div class="form-group"><input type="text" name="applicant[position]" id="position" class="input-lg form-control" placeholder="Your position" pattern=".{3,100}" required data-error="Please fill out this field."><div class="help-block with-errors"></div></div></div><div class="cf-right-col"><div class="form-group"><textarea name="applicant[aboutcompany]" id="aboutcompany" class="input-lg form-control" style="height: 120px;" placeholder="About the company" required data-error="Please fill out this field."></textarea><div class="help-block with-errors"></div></div></div>';
             if (orgtype == "Company"){
-                $(".company-form").show("slow");
-                $(".individual-form").hide();
+                $(".org-type-details").html(companyForm);
             } else if (orgtype == "Individual") {
-                $(".individual-form").show("slow");
-                $(".company-form").hide();
+                $(".org-type-details").html(individualForm);
             } else {
-                $(".company-form").hide();
-                $(".individual-form").hide();
-            }
+                $(".org-type-details").html('');
+            };
         });
     })(jQuery);
 }

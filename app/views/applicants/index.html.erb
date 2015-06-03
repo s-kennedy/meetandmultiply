@@ -13,7 +13,6 @@
         <th>Company or individual</th>
         <th>Which model?</th>
         <th>Referrer</th>
-        <th>Delete</th>
       </tr>
       <% @applicants.each do |applicant| %>
       <tr>
@@ -23,7 +22,6 @@
         <td><%=applicant.orgtype%></td>
         <td><%=applicant.bmodel%></td>
         <td><%=applicant.referrer%></td>
-        <td><%= link_to "Delete", applicant_path(applicant), method: 'delete' %></td>
       </tr>
     <% end %>
     </table>
