@@ -1,3 +1,6 @@
+<% flash.map do |key, msg| %>
+  <%= content_tag :div, msg, id: key, class: 'flash-messages'%>
+<% end %>
 <div class="col-md-12">
   <h1> All applicants </h1>
   <div class="total-applicants">
