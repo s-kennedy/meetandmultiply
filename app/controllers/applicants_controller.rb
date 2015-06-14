@@ -36,6 +36,8 @@ class ApplicantsController < ApplicationController
   def accept
     @applicant = Applicant.find params[:id]
     ApplicantMailer.acceptance_email(@applicant).deliver_now
+    @applicant.status = "Accepted"
+    @applicant.save
     flash[:accepted] = "#{@applicant.firstname} has been sent an acceptance email."
     redirect_to applicants_path
   end
@@ -43,6 +45,8 @@ class ApplicantsController < ApplicationController
   def more_info
     @applicant = Applicant.find params[:id]
     ApplicantMailer.more_info(@applicant).deliver_now
+    @applicant.status = "More info requested"
+    @applicant.save
     flash[:more_info] = "#{@applicant.firstname} has been sent an email to request more info."
     redirect_to applicants_path
   end
@@ -50,6 +54,8 @@ class ApplicantsController < ApplicationController
   def reject
     @applicant = Applicant.find params[:id]
     ApplicantMailer.rejection_email(@applicant).deliver_now
+    @applicant.status = "Rejected"
+    @applicant.save
     flash[:rejected] = "#{@applicant.firstname} has been sent a rejection email."
     redirect_to applicants_path
   end

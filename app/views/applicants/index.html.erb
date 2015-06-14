@@ -16,6 +16,7 @@
         <th>Company or individual</th>
         <th>Which model?</th>
         <th>Referrer</th>
+        <th>Status</th>
       </tr>
       <% @applicants.each do |applicant| %>
       <tr>
@@ -25,6 +26,7 @@
         <td><%=applicant.orgtype%></td>
         <td><%=applicant.bmodel%></td>
         <td><%=applicant.referrer%></td>
+        <td><%=applicant.status%></td>
       </tr>
     <% end %>
     </table>

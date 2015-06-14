@@ -26,7 +26,7 @@
   </div>
   <%= link_to "Back", applicants_path, class: "btn-mod"%><br><br>
   <%= link_to "Delete", applicant_path(@applicant), method: 'delete' %><br>
-
-
-
+  <%= link_to "Accept", @applicant.id.to_s + "/accept" %><br>
+  <%= link_to "More info", @applicant.id.to_s + "/more_info" %><br>
+  <%= link_to "Reject", @applicant.id.to_s + "/reject" %><br><br>
 </div>

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150529073827) do
+ActiveRecord::Schema.define(version: 20150614081755) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -41,6 +41,7 @@ ActiveRecord::Schema.define(version: 20150529073827) do
     t.string   "spanish"
     t.string   "otherlang"
     t.string   "referrer"
+    t.string   "status"
   end
 
   create_table "faqs", force: :cascade do |t|
