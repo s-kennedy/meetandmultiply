@@ -1,5 +1,5 @@
 class ApplicantMailer < ApplicationMailer
-  default from: 'info@endeva.org'
+  default from: 's.kennedy@endeva.org'
   include Rails.application.routes.url_helpers
   include ActionView::Helpers::UrlHelper
   
