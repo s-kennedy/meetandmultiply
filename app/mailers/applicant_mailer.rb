@@ -25,4 +25,8 @@ class ApplicantMailer < ApplicationMailer
     mail(to: @applicant.email, subject: "[Meet & Multiply] Your application results")
   end
 
+  def reminder(applicant)
+    @applicant = applicant
+    mail(to: @applicant.email, subject: "Please confirm your attendance at Meet & Multiply!")
+  end
 end

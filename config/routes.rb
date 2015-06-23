@@ -10,5 +10,6 @@ Rails.application.routes.draw do
   get '/applicants/:id/accept', to: 'applicants#accept'
   get '/applicants/:id/more_info', to: 'applicants#more_info'
   get '/applicants/:id/reject', to: 'applicants#reject'
+  get '/applicants/:id/remind', to: 'applicants#remind'
 
 end

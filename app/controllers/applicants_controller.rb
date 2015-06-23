@@ -60,6 +60,13 @@ class ApplicantsController < ApplicationController
     redirect_to applicants_path
   end
 
+  def remind
+    @applicant = Applicant.find params[:id]
+    ApplicantMailer.reminder(@applicant).deliver_now
+    flash[:reminded] = "#{@applicant.firstname} has been sent a reminder email."
+    redirect_to applicants_path
+  end
+
   private
 
   def applicant_params
