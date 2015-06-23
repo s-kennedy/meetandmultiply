@@ -27,6 +27,7 @@ class ApplicantMailer < ApplicationMailer
 
   def reminder(applicant)
     @applicant = applicant
+    @originator = Originator.find_by title: @applicant.bmodel
     mail(to: @applicant.email, subject: "Please confirm your attendance at Meet & Multiply!")
   end
 end
