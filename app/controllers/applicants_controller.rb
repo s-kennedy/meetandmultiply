@@ -35,10 +35,10 @@ class ApplicantsController < ApplicationController
 
   def accept
     @applicant = Applicant.find params[:id]
-    ApplicantMailer.acceptance_email(@applicant).deliver_now
+    # ApplicantMailer.acceptance_email(@applicant).deliver_now
     @applicant.status = "Accepted"
     @applicant.save
-    flash[:accepted] = "#{@applicant.firstname} has been sent an acceptance email."
+    flash[:accepted] = "#{@applicant.firstname} has been accepted."
     redirect_to applicants_path
   end
 
