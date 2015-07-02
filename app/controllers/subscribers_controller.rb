@@ -8,7 +8,7 @@ class SubscribersController < ApplicationController
   def create
     @subscriber = Subscriber.new subs_params 
     if @subscriber.save
-      flash[:subscribed] = "Thank you, you have been successfully subscribed to the Meet & Multiply mailing list."
+      flash[:subscribed] = "Thank you #{@subscriber.firstname.downcase.capitalize}, you have been successfully subscribed to the Meet & Multiply mailing list."
       redirect_to root_path
     else 
       flash[:fail] = "Sorry, your form was not submitted. Please make sure all the fields are completed correctly and try again."
