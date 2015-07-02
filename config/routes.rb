@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   get '/faq', to: 'faqs#index'
   resources :originators
   resources :applicants
+  resources :subscribers, only: [:index, :create, :destroy]
   resources :faqs
   match '/404', to: 'errors#file_not_found', via: :all
   match '/422', to: 'errors#unprocessable', via: :all

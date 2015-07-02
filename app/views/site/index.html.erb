@@ -25,7 +25,7 @@
                         <li><a href="#contact">Event Info</a></li>
                         <li><a href="/faqs">FAQ</a></li>
                         <li>
-                            <a href="#apply"><span class="btn btn-mod btn-color btn-circle">Apply</span></a>
+                            <a href="#apply"><span class="btn btn-mod btn-color btn-circle">Subscribe</span></a>
                         </li>
                        
                     </ul>
@@ -61,7 +61,7 @@
                     <div class="local-scroll">
                         <a href="#overview" class="btn btn-mod btn-large btn-w hidden-xs">Learn more</a>
                         <span class="hidden-xs">&nbsp;</span>
-                        <a href="#apply" class="btn btn-mod btn-large btn-color" target="_blank">Apply</a>
+                        <a href="#apply" class="btn btn-mod btn-large btn-color" target="_blank">Subscribe</a>
                     </div>
                     
                 </div>
@@ -105,7 +105,7 @@
                             <li>create links to valuable ecosystem partners that can help fast track the process of replication.</li>
                         </ul></p>
                         <p><strong>More than just the event.</strong> We will continue to follow up with throughout the year with originators and adopters and continue to link them with relevant partners and support replication.</p>
-                        <p>We are looking for adopters! <strong><a href="#apply">Apply now.</a></strong></p>
+                        <p>We are looking for adopters! <strong><a href="#apply">Subscribe</a></strong></p>
                     </div>
                     
                     <div class="row alt-features-grid">
@@ -375,7 +375,7 @@
                     <div class="local-scroll">
                         <a href="#originators" class="btn btn-mod btn-w btn-large">Learn more</a>
                         <span class="hidden-xs">&nbsp;</span>
-                        <a href="#apply" class="btn btn-mod btn-large btn-color" target="_blank">Apply</a>
+                        <a href="#apply" class="btn btn-mod btn-large btn-color" target="_blank">Subscribe</a>
                     </div>
                     
                 </div>
@@ -768,9 +768,9 @@
                 <div class="col-md-8 col-md-offset-2 align-center">
                     
                     <!-- Section Titles -->
-                    <h1 class="section-title large">Be an adopter</h1>
-                    <h2 class="section-heading mb-40">Apply now</h2>
-                    <div class="section-text"><p>The deadline has been extended to June 19!</p><br></div>
+                    <h1 class="section-title large">Interested in participating?</h1>
+                    <h2 class="section-heading mb-40">Subscribe</h2>
+                    <div class="section-text"><p>The pilot event was a success and we plan to do more events and follow-up activities. If you are interested in being kept up-to-date on Meet & Multiply please fill in the form below. </p><br></div>
                     <!-- End Section Titles -->
                     
                 </div>
@@ -780,7 +780,7 @@
             <div class="row">
                 <div class="col-md-10 col-md-offset-1 application-form">
                     
-                    <form accept-charset="UTF-8" action="/applicants" method="post"class="form contact-form" id="contact_form" autocomplete="off" data-toggle="validator">
+                    <form accept-charset="UTF-8" action="/subscribers" method="post"class="form contact-form" id="contact_form" autocomplete="off" data-toggle="validator">
                     <input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
                         <div class="clearfix">
                             
@@ -788,31 +788,31 @@
 
                                 <!-- First Name -->
                                 <div class="form-group">
-                                    <input type="text" name="applicant[firstname]" id="first-name" class="input-lg form-control" placeholder="First name" pattern=".{3,100}" required data-error="Please enter your name.">
+                                    <input type="text" name="subscriber[firstname]" id="first-name" class="input-lg form-control" placeholder="First name" pattern=".{3,100}" required data-error="Please enter your name.">
                                     <div class="help-block with-errors"></div>
                                 </div>
 
                                 <!-- Last Name -->
                                 <div class="form-group">
-                                    <input type="text" name="applicant[lastname]" id="last-name" class="input-lg form-control" placeholder="Last name" pattern=".{3,100}" required data-error="Please enter your last name.">
+                                    <input type="text" name="subscriber[lastname]" id="last-name" class="input-lg form-control" placeholder="Last name" pattern=".{3,100}" required data-error="Please enter your last name.">
                                     <div class="help-block with-errors"></div>
                                 </div>
 
                                 <!-- Email -->
                                 <div class="form-group">
-                                    <input type="email" name="applicant[email]" id="email" class="input-lg form-control" placeholder="Email" pattern=".{5,100}" required data-error="Please enter a valid email address.">
+                                    <input type="email" name="subscriber[email]" id="email" class="input-lg form-control" placeholder="Email" pattern=".{5,100}" required data-error="Please enter a valid email address.">
                                     <div class="help-block with-errors"></div>
                                 </div>
 
-                                <!-- Nationality -->
+                                <!-- Role -->
                                 <div class="form-group">
-                                    <input type="text" name="applicant[nationality]" id="nationality" class="input-lg form-control" placeholder="Nationality" pattern=".{5,100}" required data-error="What is your nationality?">
-                                    <div class="help-block with-errors"></div>
-                                </div>
-
-                                <!-- Location -->
-                                <div class="form-group">
-                                    <input type="text" name="applicant[location]" id="location" class="input-lg form-control" placeholder="Location" pattern=".{5,100}" required data-error="Where are you currently based?">
+                                    <label class="form-label" for="orgtype">Do you see your self as a potential Originator, Adopter or Partner?</label>
+                                    <select name="subscriber[role]" id="role" class="input-lg form-control" placeholder="Which role interests you?" pattern=".{5,100}" required data-error="Please select an item from the list.">
+                                        <option selected="selected" disabled="disabled" value="">Choose one</option>
+                                        <option value="Originator">Originator: Your company is interested in expanding or replicating in a new region.</option>
+                                        <option value="Adopter">Adopter: You are interested in adopting or replicating a social business model. </option>
+                                        <option value="Partner">Partner: You wish to provide support for the replication of social business models.</option>
+                                    </select>
                                     <div class="help-block with-errors"></div>
                                 </div>
 
@@ -821,101 +821,42 @@
                             
                             <div class="cf-right-col">
 
-                                <!-- Language -->
+                                <!-- Organization -->
                                 <div class="form-group">
-                                    <label class="form-label" for="orgtype">What is your level of English?</label>
-                                    <select name="applicant[english]" id="english" class="input-lg form-control" placeholder="Level of English" pattern=".{5,100}" required data-error="Please select an item from the list.">
+                                    <input type="text" name="subscriber[orgname]" id="orgname" class="input-lg form-control" placeholder="Organization name" pattern=".{5,100}" >
+                                    <div class="help-block with-errors"></div>
+                                </div>
+
+                                <!-- Sector -->
+                                <div class="form-group">
+                                    <input type="text" name="subscriber[sector]" id="sector" class="input-lg form-control" placeholder="Sector of interest" pattern=".{5,100}" >
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                                
+                                <!-- Region -->
+                                <div class="form-group">
+                                    <label class="form-label" for="region">What is your region of interest?</label>
+                                    <select name="subscriber[region]" id="region" class="input-lg form-control" placeholder="Region of interest" pattern=".{5,100}" >
                                         <option selected="selected" disabled="disabled" value="">Choose one</option>
-                                        <option value="Low">Low</option>
-                                        <option value="Intermediate">Intermediate</option>
-                                        <option value="Advanced">Advanced</option>
+                                        <option value="East Asia and Pacific">East Asia and Pacific</option>
+                                        <option value="Europe and Central Asia">Europe and Central Asia</option>
+                                        <option value="Latin America & the Caribbean">Latin America & the Caribbean</option>
+                                        <option value="Middle East and North Africa">Middle East and North Africa</option>
+                                        <option value="North America">North America</option>
+                                        <option value="South Asia">South Asia</option>
+                                        <option value="Sub-Saharan Africa">Sub-Saharan Africa</option>
                                     </select>
                                     <div class="help-block with-errors"></div>
                                 </div>
 
-                                <div class="form-group">
-                                    <label class="form-label" for="orgtype">What is your level of Spanish?</label>
-                                    <select name="applicant[spanish]" id="spanish" class="input-lg form-control" placeholder="Level of Spanish" pattern=".{5,100}" required data-error="Please select an item from the list.">
-                                        <option selected="selected" disabled="disabled" value="">Choose one</option>
-                                        <option value="Low">Low</option>
-                                        <option value="Intermediate">Intermediate</option>
-                                        <option value="Advanced">Advanced</option>
-                                    </select>
-                                    <div class="help-block with-errors"></div>
-                                </div>
-
-                                <div class="form-group">
-                                    <input type="text" name="applicant[otherlang]" id="otherlang" class="input-lg form-control" placeholder="Any other languages?" pattern=".{5,100}">
-                                </div>
 
 
                             </div>
                             
                             <div class="cf-full-width">
-
-                            <!-- Org Type -->
-                                <div class="form-group">
-                                    <label class="form-label" for="orgtype">How are you applying?</label>
-                                    <select name="applicant[orgtype]" id="orgtype" class="input-lg form-control" placeholder="Applying as" pattern=".{5,100}" required data-error="Please select an item from the list.">
-                                        <option selected="selected" disabled="disabled" value="">Choose one</option>
-                                        <option value="Company">As a company</option>
-                                        <option value="Individual">As an individual</option>
-                                    </select>
-                                    <div class="help-block with-errors"></div>
-                                </div>
-                            </div>
-                            
-                            <div class="org-type-details"></div>
 
                         </div> <!-- end clearfix -->
 
-                        <div class="clearfix">
-
-                            <div class="cf-full-width">
-
-                                <!-- Model -->
-                                <div class="form-group">
-                                    <label class="form-label" for="bmodel">Which model are you interested in?</label>
-                                    <select name="applicant[bmodel]" id="bmodel" class="input-lg form-control" placeholder="Model" pattern=".{5,100}" required data-error="Please select an item from the list.">
-                                        <option disabled="disabled" selected="selected" value="">Choose one</option>
-                                        <option value="eKutir">eKutir</option>
-                                        <option value="Jain Irrigation">Jain Irrigation</option>
-                                        <option value="Narayana Health">Narayana</option>
-                                        <option value="Ross Clinics">Ross Clinics</option>
-                                    </select>
-                                    <div class="help-block with-errors"></div>
-                                </div>
-                            </div>
-
-                            <div class="cf-left-col">
-                                <!-- Profile -->
-                                <div class="form-group">
-                                    <textarea name="applicant[profile]" id="profile" class="input-lg form-control" style="height: 120px;" placeholder="Explain how you match the Adopter profile for this business" required data-error="Please fill out this field."></textarea>
-                                    <div class="help-block with-errors"></div>
-                                </div>
-
-                                <!-- Interest -->
-                                <div class="form-group">                                            
-                                    <textarea name="applicant[interest]" id="interest" class="input-lg form-control" style="height: 120px;" placeholder="Why are you interested in adopting or replicating this business model?" required data-error="Please fill out this field."></textarea>
-                                    <div class="help-block with-errors"></div>
-                                </div>
-
-                                
-                            </div> 
-                            
-                            <div class="cf-right-col">
-                                <!-- Find out -->
-                                <div class="form-group">
-                                    <textarea name="applicant[referrer]" id="additional" class="input-lg form-control" style="height: 120px;" placeholder="How did you find out about this event?" ></textarea>
-                                </div>
-
-                                <!-- Additional -->
-                                <div class="form-group">
-                                    <textarea name="applicant[additional]" id="additional" class="input-lg form-control" style="height: 120px;" placeholder="Any additional info?" ></textarea>
-                                </div>
-                            </div>
-
-                        </div>
                         
                         <div class="clearfix">
                             

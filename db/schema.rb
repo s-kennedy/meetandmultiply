@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150614081755) do
+ActiveRecord::Schema.define(version: 20150702202238) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -111,5 +111,17 @@ ActiveRecord::Schema.define(version: 20150614081755) do
   end
 
   add_index "originators", ["slug"], name: "index_originators_on_slug", unique: true, using: :btree
+
+  create_table "subscribers", force: :cascade do |t|
+    t.string   "firstname"
+    t.string   "lastname"
+    t.string   "email"
+    t.string   "sector"
+    t.string   "orgname"
+    t.string   "region"
+    t.string   "role"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
 end

@@ -1,0 +1,36 @@
+<% flash.map do |key, msg| %>
+  <%= content_tag :div, msg, id: key, class: 'flash-messages'%>
+<% end %>
+<div class="col-md-12">
+  <h1> All subscribers </h1>
+  <div class="total-applicants">
+    <p>Total subscribers: <%= @subscribers.count %></p>
+  </div>
+
+  <div class="all-applicants admin-page">
+    <table>
+      <tr>
+        <th>First name</th>
+        <th>Last name</th>
+        <th>Email</th>
+        <th>Organization</th>
+        <th>Role</th>
+        <th>Sector</th>
+        <th>Region</th>
+        <th>Delete</th>
+      </tr>
+      <% @subscribers.each do |subscriber| %>
+      <tr>
+        <td><%=subscriber.firstname %></td>
+        <td><%=subscriber.lastname%></td>
+        <td><%=subscriber.email%></td>
+        <td><%=subscriber.orgname%></td>
+        <td><%=subscriber.role%></td>
+        <td><%=subscriber.sector%></td>
+        <td><%=subscriber.region%></td>
+        <td><%=link_to "Delete", subscriber_path(subscriber), method: "delete" %></td>
+      </tr>
+    <% end %>
+    </table>
+  </div>
+</div>
